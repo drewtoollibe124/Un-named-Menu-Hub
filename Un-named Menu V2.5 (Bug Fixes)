@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Un-named Menu", "BloodTheme")
+local Window = Library.CreateLib("Un-named Menu", "DarkTheme")
 
 -- ALL
 local All = Window:NewTab("All")
@@ -30,8 +30,7 @@ end)
   print("Clicked")
 end)
 
-AllSection:NewButton("Chat Bypasser", "Lets you swear.", function()
- loadstring(game:HttpGet('https://pastes.io/raw/lstrrfipqq'))()
+AllSection:NewButton("Empty", "For now", function()
  print("Clicked")
 end)
 
@@ -44,7 +43,7 @@ Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
 print("Clicked")
 end)
 
-AllSection:NewButton("Solarhub Check info (3 dots) for key.",  "Works in most games. Key is: Rizz126", function()
+AllSection:NewButton("Solarhub Check info (3 dots) for key.",  "Works in most games. Key is: Bot Is Down", function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/xurel7/solarhub/main/key-system/loader.lua"))()
  print("Clicked")
 end)
@@ -124,4 +123,4 @@ local Info = Window:NewTab("Info")
 
 local InfoSection = Info:NewSection("Info:")
 
-local InfoSection = Info:NewSection("Add s2fmdahfn on discord for info!")
+local InfoSection = Info:NewSection("Add floodqw on discord for info!")

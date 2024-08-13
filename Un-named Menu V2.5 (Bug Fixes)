@@ -1,3 +1,9 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Notification";
+    Text = "Add floodqw on discord for more and fuck solara";
+    Icon = "";
+    Duration = "5";
+})
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Un-named Menu", "DarkTheme")
 

@@ -20,7 +20,7 @@ OtherSection:NewButton("Remote Spy", "...", function()
 end)
 
 OtherSection:NewButton("Aimbot", "Aims for you", function()
-    loadstring(game:HttpGet('https://github.com/drewtoollibe124/Good-Aimbot---Storm-Hub/blob/main/aimbot'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/drewtoollibe124/Loadstring-for-Un-Named-Menu/main/ss",true))()
     print("Clicked")
 end)
 

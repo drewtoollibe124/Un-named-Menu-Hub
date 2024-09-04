@@ -14,8 +14,9 @@ local Tab = Window:NewTab("Other")
 
 local OtherSection = Tab:NewSection("Other")
 
-OtherSection:NewKeybind("Hide/Show UI", "...", Enum.KeyCode.F, function()
-	Library:ToggleUI()
+OtherSection:NewButton("Remote Spy", "...", function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/RtxyDev/roblox-scripts/main/remotespy.lua"))() 
+ print("Clicked")
 end)
 
 OtherSection:NewButton("Aimbot", "Aims for you", function()
@@ -31,6 +32,10 @@ end)
 OtherSection:NewButton("Dex Explorer", "Shows the Library (Studio)", function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
     print("Clicked")
+end)
+
+OtherSection:NewKeybind("Hide/Show UI", "...", Enum.KeyCode.F, function()
+	Library:ToggleUI()
 end)
 
 OtherSection:NewButton("StormWare", "StormWare Menu", function()

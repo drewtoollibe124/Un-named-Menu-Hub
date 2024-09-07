@@ -24,18 +24,13 @@ OtherSection:NewButton("Aimbot", "Aims for you", function()
     print("Clicked")
 end)
 
-OtherSection:NewButton("Remote Spy", "Shows Scripts happening.", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Brand/Turtle-Spy/main/source.lua", true))()
-    print("Clicked")
-end)
-
 OtherSection:NewButton("Dex Explorer", "Shows the Library (Studio)", function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
     print("Clicked")
 end)
 
 OtherSection:NewKeybind("Hide/Show UI", "...", Enum.KeyCode.F, function()
-	Library:ToggleUI()
+Library:ToggleUI()
 end)
 
 OtherSection:NewButton("StormWare", "StormWare Menu", function()
@@ -49,7 +44,7 @@ OtherSection:NewButton("Solarhub Check info (3 dots) for key.", "Works in most g
 end)
 
 OtherSection:NewButton("ESP", "Shows outlines of players.", function()
-    -- ESP functionality code here...
+pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))() end)
     print("Clicked")
 end)
 
